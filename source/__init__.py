@@ -1,3 +1,3 @@
-from . import (camera, player)
+from . import (basic, camera, player)
 
-submodules = [camera, player]
+submodules = [basic, camera, player]
