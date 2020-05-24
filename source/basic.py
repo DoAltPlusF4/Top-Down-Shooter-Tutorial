@@ -54,6 +54,10 @@ class Basic(pymunk.Body):
 
         if sprite is not None:
             self.sprite = sprite
+            self.sprite.position = (
+                self.sprite.position[0]+x,
+                self.sprite.position[1]+y
+            )
 
     def _update_sprite(self):
         if hasattr(self, "sprite"):
