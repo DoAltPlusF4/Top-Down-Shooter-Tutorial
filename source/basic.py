@@ -50,6 +50,7 @@ class Basic(pymunk.Body):
                     radius=collider["radius"],
                     offset=collider["offset"]
                 )
+            self.collider.collision_type = collider["id"]
             self.application.space.add(self.collider)
 
         if sprite is not None:
@@ -59,7 +60,7 @@ class Basic(pymunk.Body):
                 self.sprite.position[1]+y
             )
 
-    def _update_sprite(self):
+    def _updateSprite(self):
         if hasattr(self, "sprite"):
             self.sprite.x = self.position.x
             self.sprite.y = self.position.y

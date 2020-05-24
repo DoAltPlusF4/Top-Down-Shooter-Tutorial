@@ -1,3 +1,3 @@
-from . import (basic, camera, player)
+from . import (basic, camera, constants, enemy, player)
 
-submodules = [basic, camera, player]
+submodules = [basic, camera, constants, enemy, player]
